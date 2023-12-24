@@ -6,7 +6,9 @@ export const Header = () => {
     <div>
       <header>
         <nav>
-          <a href="#">Logo</a>
+          <a href="#">
+            <h1>Logo</h1>
+          </a>
           <ul>
             <li>
               <NavLink to="/">Home</NavLink>

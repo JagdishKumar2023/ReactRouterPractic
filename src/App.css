@@ -5,7 +5,6 @@
 #navContainer {
   /* border: 2px solid green; */
   display: flex;
-  justify-content: space-between;
 }
 
 nav {
@@ -16,4 +15,13 @@ nav {
   align-items: center;
   width: 200vh;
   font-size: 25px;
+}
+
+ul {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 15px;
+  color: black;
+  list-style: none;
+  text-transform: none;
 }

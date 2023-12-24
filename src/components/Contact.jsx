@@ -1,14 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { Header } from "./Header";
+import { useNavigate } from "react-router-dom";
 
 export const Contact = () => {
+  const thapa = useNavigate();
+
+  const goToHome = () => {
+    thapa("/");
+  };
+
   return (
     <div id="navContainer">
-      <Header />
-      {/* <section>
+      <section>
         <h1>Contact Page</h1>
-      </section> */}
+        <button onClick={goToHome}>go to Home Page</button>
+      </section>
+      {/* <Header /> */}
     </div>
   );
 };

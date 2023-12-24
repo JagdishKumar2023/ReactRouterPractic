@@ -1,5 +1,6 @@
 import React from "react";
 import { Header } from "./Header";
+import { Outlet } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -24,6 +25,7 @@ export const Home = () => {
       {/* <section>
         <h1>Home Page</h1>
       </section> */}
+      <Outlet />
     </div>
   );
 };

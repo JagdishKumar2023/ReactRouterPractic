@@ -1,13 +1,19 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { Header } from "./Header";
+import { useNavigate } from "react-router-dom";
 
 export const About = () => {
+  const navigate = useNavigate();
+
+  const goToContact = () => {
+    navigate("/contact");
+  };
+
   return (
     <div id="navContainer">
       <section>
-        <Header />
-        {/* <h1>About Page</h1> */}
+        <h1>About Page</h1>
+        {/* <Header /> */}
+        <button onClick={() => goToContact()}>go to contact page</button>
       </section>
     </div>
   );
